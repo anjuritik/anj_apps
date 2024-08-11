@@ -1,3 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<h2>Checking </h2>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+// import ToolItem from "../lib/todolist.svelte"
+import ToolItem from "$lib/todolist.svelte"
+const pagettle="Todo";
+</script>
+<svelte:head>
+    <title>Todos</title>
+</svelte:head>
+<h1>{pagettle}</h1>
+<form action="" method="">
+<input type="text" name="text" placeholder="+type tp add a todo">
+
+</form>
+<ToolItem/>
