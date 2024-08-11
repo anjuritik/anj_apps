@@ -2,6 +2,7 @@
 // import ToolItem from "../lib/todolist.svelte"
 import ToolItem from "$lib/todolist.svelte"
 const pagettle="Todo";
+const tle1="check"
 </script>
 <svelte:head>
     <title>Todos</title>
