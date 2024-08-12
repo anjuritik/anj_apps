@@ -17,9 +17,6 @@ vscode:
 #- init: npm install && npm run build
 #command: npm run dev
 
-tasks:
-  - init: npm install
-    command: export HMR_HOST='gp url 3000' && npm run dev
 github:
     prebuilds:
     master:true
