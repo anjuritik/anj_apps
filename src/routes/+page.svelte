@@ -11,7 +11,8 @@ const tle1="check"
 </svelte:head>
 <h1>{pagettle}</h1>
 <form action="" method="">
+    <div  class="todo-container">
 <input type="text" name="text" placeholder="+type tp add a todo">
-
+</div>
 </form>
 <ToolItem/>
