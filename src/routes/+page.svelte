@@ -19,13 +19,13 @@ const tle1="check"
     }
     .new input
     {
-
-        font-size: 28px;
+       font-size: 28px;
         width: 100%;
         border-radius: 8px;
-        padding: 0.5rem 1rem 0.3rem 1rem ;
+        padding: 0.5em 1em 0.3em 1em ;
         box-sizing: border-box;
         text-align: center;
+         background:rgba(255,255,255,0.05);
 
     }
     .todos :global(input)
@@ -47,8 +47,9 @@ const tle1="check"
         <input type="text" name="text" placeholder="+type tp add a todo">
         
     </form>
-        <ToolItem/>
-    
+         <ToolItem/> 
+         <ToolItem/> 
+         <ToolItem/>     
 </div>
 
 
