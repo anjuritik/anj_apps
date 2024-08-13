@@ -67,7 +67,13 @@ border-radius: 4px;
     transition: opacity 0.2;
     opacity: 1;
 }
-.toggle {
+.done{
+
+    transform: none;
+    opacity: 0.5;
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.1) );
+}
+.done .toggle {
  
     background-image: url('../routes/images/dn1.png');
 }
@@ -75,7 +81,7 @@ border-radius: 4px;
 <script>
     import mySvg from '../routes/images/savebtn.svg'; // Adjust path accordingly
   </script>
-<div class="todo">
+<div class="todo done">
 <form action="" method="">
     <input type="hidden" name="done" value="">
     <button aria-label="Mark done/Not done" class="toggle"> </button>
