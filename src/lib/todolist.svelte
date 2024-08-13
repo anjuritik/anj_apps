@@ -46,7 +46,6 @@ border-radius: 4px;
     position: absolute;
     right:0;
     opacity: 0;
-    background-image: url();
 }
 </style>
 <div class="todo">
