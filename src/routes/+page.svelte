@@ -32,7 +32,9 @@ const tle1="check"
     {border: 1px solid transparent;}
     .todos :global(input:focus-visible)
     {
-        box-shadow: inset 1px 1px 6px black;
+        box-shadow: inset 1px
+        
+        1px 6px black;
         outline: none;
         border: 1px solid red !important;
     }

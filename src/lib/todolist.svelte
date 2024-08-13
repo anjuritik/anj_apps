@@ -46,20 +46,47 @@ border-radius: 4px;
     position: absolute;
     right:0;
     opacity: 0;
+    background-image: url('../routes/images/save1.png');
+}
+.todo input:focus +.save,
+.save:focus
+{transition: opacity 0.2s;
+ opacity: 1;
+}
+.delete
+{
+    /* position: absolute;
+    right:0; */
+    opacity: 1;
+    background-image: url('../routes/images/del1.png');
+
+}
+.delete:hover,
+.delete:focus
+{
+    transition: opacity 0.2;
+    opacity: 1;
+}
+.toggle {
+ 
+    background-image: url('../routes/images/dn1.png');
 }
 </style>
+<script>
+    import mySvg from '../routes/images/savebtn.svg'; // Adjust path accordingly
+  </script>
 <div class="todo">
 <form action="" method="">
     <input type="hidden" name="done" value="">
-    <button aria-label="Mark done/Not done" class="toggle"> Done/NotDone</button>
+    <button aria-label="Mark done/Not done" class="toggle"> </button>
 </form>
 
-<form action="" method="">
+<form action="" method="" class="text">
     <input type="text" />
-    <button aria-label="Save Todo "  class="save"> Save</button>
+    <button aria-label="Save Todo "  class="save"> </button>
 </form>
 <form action="" method="">
-    <button aria-label="Delete " class="delete"> Delete</button>
+    <button aria-label="Delete " class="delete"> </button>
 </form>
 
 </div>
