@@ -1,38 +1,40 @@
-# create-svelte
+# Steps
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Develop
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+pnpm i
+pnpm dev
 ```
 
-## Developing
+## Deploy
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```
+AUTO
 ```
 
-## Building
+## Remove node_mobules
 
-To create a production version of your app:
+rmdir /s /q node_modules
 
-```bash
-npm run build
-```
+## Upload instructions from ERP (admin/po)
 
-You can preview the production build with `npm run preview`.
+Template: static/kpt_srm_po.csv
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### Instructions
+
+1. vendor_remark will not be imported
+2. If a column is missing, it will not be imported
+3. If a column contains empty data, it will import empty into PO
+4. Records will be checked based on PO_NO, PART_NO
+   If all of the above match then update else insert new record
+
+## Upload instructions from ERP (admin/rr)
+
+1. Records will be checked based on PO_NO, PART_NO, RR_NO
+   If all of the above match then update else insert new record
+
+## Upload instructions from ERP (admin/da)
+
+1. Records will be checked based on PO_NO, PART_NO, DA_NO
+   If all of the above match then update else insert new record
