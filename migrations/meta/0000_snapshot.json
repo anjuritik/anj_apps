@@ -1,0 +1,496 @@
+{
+  "id": "21c75069-f0cd-4cdc-a52c-efd151e4dc54",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "5",
+  "dialect": "pg",
+  "tables": {
+    "kpt_srm_da": {
+      "name": "kpt_srm_da",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "division_name ": {
+          "name": "division_name ",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "supplier_name": {
+          "name": "supplier_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_no": {
+          "name": "part_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_desc": {
+          "name": "part_desc",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "blanket_po": {
+          "name": "blanket_po",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "po_date": {
+          "name": "po_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_no": {
+          "name": "da_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_date": {
+          "name": "da_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_qty": {
+          "name": "da_qty",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "po_qty": {
+          "name": "po_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wo_no": {
+          "name": "wo_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "receipt_at_vendor": {
+          "name": "receipt_at_vendor",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "wo_progress_by_vendor": {
+          "name": "wo_progress_by_vendor",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "vendor_remark": {
+          "name": "vendor_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hal_remark": {
+          "name": "hal_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "kpt_srm_po": {
+      "name": "kpt_srm_po",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "division_name ": {
+          "name": "division_name ",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "vendor_no": {
+          "name": "vendor_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "supplier_name": {
+          "name": "supplier_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "blanket_line ": {
+          "name": "blanket_line ",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_no": {
+          "name": "part_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_desc": {
+          "name": "part_desc",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "blanket_po": {
+          "name": "blanket_po",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "po_date": {
+          "name": "po_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "po_qty": {
+          "name": "po_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "unit_price": {
+          "name": "unit_price",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "received_qty": {
+          "name": "received_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "desp_qty": {
+          "name": "desp_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "vendor_remark": {
+          "name": "vendor_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hal_remark": {
+          "name": "hal_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "kpt_srm_rr": {
+      "name": "kpt_srm_rr",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "division_name ": {
+          "name": "division_name ",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "supplier_name": {
+          "name": "supplier_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_no": {
+          "name": "part_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "part_desc": {
+          "name": "part_desc",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "blanket_po": {
+          "name": "blanket_po",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "po_date": {
+          "name": "po_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_no": {
+          "name": "da_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_date": {
+          "name": "da_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "da_qty": {
+          "name": "da_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "invoice_no": {
+          "name": "invoice_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "gr_no": {
+          "name": "gr_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "gr_date": {
+          "name": "gr_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rr_no": {
+          "name": "rr_no",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rr_date": {
+          "name": "rr_date",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rr_qty": {
+          "name": "rr_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "accepted_qty": {
+          "name": "accepted_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rej_qty": {
+          "name": "rej_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rew_qty": {
+          "name": "rew_qty",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reason": {
+          "name": "reason",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rr_status": {
+          "name": "rr_status",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "landed_cost": {
+          "name": "landed_cost",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "vendor_remark": {
+          "name": "vendor_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hal_remark": {
+          "name": "hal_remark",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "users": {
+      "name": "users",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "div": {
+          "name": "div",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uid": {
+          "name": "uid",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "password": {
+          "name": "password",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "phone": {
+          "name": "phone",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "role": {
+          "name": "role",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "active": {
+          "name": "active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false,
+          "default": true
+        },
+        "sid": {
+          "name": "sid",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp(6) with time zone",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
